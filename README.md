@@ -28,14 +28,12 @@ _**ASADWI**_ is derived from the Hindi word "आसाढ़," representing a ra
     Three machine learning models predict water quality, geology information, and lithology based on user-provided location data. While these models are functional, they are acknowledged as inefficient due to limited datasets, resulting in suboptimal time complexity.
 
 **Call for Contributions:**
-
     Improved Machine Learning Models:
         Contributors are invited to enhance the existing models through:
             Advanced algorithms.
             Inclusion of larger and more relevant datasets.
             Improved feature engineering.
-            Optimized hyperparameters.
-            
+            Optimized hyperparameters.           
     UI/UX Enhancements:
         Contributions towards improving the user interface and experience are highly appreciated. This includes design enhancements, usability improvements, and creative additions.
 
