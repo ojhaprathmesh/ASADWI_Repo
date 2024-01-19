@@ -25,7 +25,7 @@ _**ASADWI**_ is derived from the Hindi word "आसाढ़," representing a ra
 * Interface.py: Python scripts for machine learning model interface.
         
 ## **Machine Learning Models:** ##
-    Three machine learning models predict water quality, geology information, and lithology based on user-provided location data. While these models are functional, they are acknowledged as inefficient due to limited datasets, resulting in suboptimal time complexity.
+Three machine learning models predict water quality, geology information, and lithology based on user-provided location data. While these models are functional, they are acknowledged as inefficient due to limited datasets, resulting in suboptimal time complexity.
 
 ## **Call for Contributions:** ##
 * Improved Machine Learning Models:
@@ -39,4 +39,4 @@ _**ASADWI**_ is derived from the Hindi word "आसाढ़," representing a ra
     * Contributions towards improving the user interface and experience are highly appreciated. This includes design enhancements, usability improvements, and creative additions.
 
 ## **Note to Contributors:** ##
-    This project welcomes contributions to address model inefficiencies and improve user experience. Please feel free to fork the repository, make pull requests, and collaborate to make ASADWI a more robust and user-friendly platform. We appreciate efforts towards refining machine learning models, leveraging extensive datasets, and enhancing UI/UX for impactful spatial analysis. Let's create something valuable together!
+This project welcomes contributions to address model inefficiencies and improve user experience. Please feel free to fork the repository, make pull requests, and collaborate to make ASADWI a more robust and user-friendly platform. We appreciate efforts towards refining machine learning models, leveraging extensive datasets, and enhancing UI/UX for impactful spatial analysis. Let's create something valuable together!
