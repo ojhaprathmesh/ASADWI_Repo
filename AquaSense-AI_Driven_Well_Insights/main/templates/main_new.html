@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>ASADWI</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_new.css') }}" type="text/css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar and Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <input type="checkbox" id="check"/>
+
+        <div class="sidebar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">ASADWI</a>
+            </div>
+            <!-- Menu -->
+            <div class="menu" id="menu">
+                <ul>
+                    <li class="menu-content"><a href="#"><i class="fas fa-image"></i>Gallery</a></li>
+                    <li class="menu-content"><a href="#"><i class="fas fa-photo-video"></i>Exhibits</a></li>
+                    <li class="menu-content"><a href="#"><i class="fas fa-calendar-alt"></i>Events</a></li>
+                    <li class="menu-content"><a href="#"><i class="fas fa-store"></i>Store</a></li>
+                    <li class="menu-content"><a href="#"><i class="fas fa-phone"></i>Contact</a></li>
+                    <li class="menu-content"><a href="#" id="menu-feedback-button>"><i class="far fa-comments"></i>Feedback</a></li>
+                </ul>
+            </div>
+            <!-- Social Media -->
+            <div class="social-media">
+                <ul>
+                    <li id="li-facebook"><a href="#"><i class="icon fab fa-facebook-square" id="facebook"></i></a></li>
+                    <li id="li-twitter"><a href="#"><i class="icon fab fa-twitter-square" id="twitter"></i></a></li>
+                    <li id="li-instagram"><a href="#"><i class="icon fab fa-instagram-square" id="instagram"></i></a></li>
+                    <li id="li-youtube"><a href="#"><i class="icon fab fa-youtube-square" id="youtube"></i></a></li>
+                </ul>
+            </div>
+            <!-- Close Button -->
+            <label for="check" class="close-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="header">
+                <!-- Sidebar Open Button -->
+                <label for="check">
+                    <i class="fas fa-bars" id="open-sidebar"></i>
+                </label>
+
+                <!-- Feedback Button -->
+                <button class="feedback-button" id="open-feedback">Give Feedback</button>
+                
+                <!-- Feedback Modal -->
+                <div id="feedback-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Feedback</h2>
+                        <p>We value your input. Please share your feedback with us.</p>
+
+                        <textarea id="feedback-text" rows="5" placeholder="Type your feedback here..."></textarea>
+                        <button id="submit-feedback">Submit</button>
+                    </div>
+                </div>
+
+                <!-- Search Box Container -->
+                <div class="form-container">
+                    <form action="/process_input" method="POST">
+                        <div class="input-group">
+                            <input type="text" class="search search-text" name="user_input" id="user_input" placeholder="Enter Your Place" required minlength="3" maxlength="20" size="25"/>
+                            <button type="submit" class="search submit-button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="main-box">
+                <img src="static/logo-asadwi.png" class="bgImg" alt="Not Available" srcset="">
+            </div>
+
+            <div class="output-container">
+                <!-- Close button -->
+                <button id="close-output" class="close-output-button">Got It!</button>
+            
+                <!-- Results will be displayed here -->
+                <div class="output-content">
+                    <!-- Results content goes here -->
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script src="{{ url_for('static', filename='script_new.js') }}">
+        var waterQualityResult = "{{ a }}";
+        var geologyResult = "{{ b }}";
+        var lithologyResult = "{{ c }}";
+    </script>
+</body>
+</html>

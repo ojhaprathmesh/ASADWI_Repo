@@ -1,0 +1,278 @@
+,From,To,Thickness,Lithology
+0,0,1.5,1.5,Top Soil: Grey mixed with silt and sand grains.
+1,1.5,4.5,3.0,"Basalt: Weathered; brownish grey and black; irregular
+pebbles."
+2,4.5,19.0,14.5,Basalt: Fresh; hard; black with irregular chips
+3,19,27.0,8.0,"Basalt: Vesicular; hard; compact; partially filled with Green
+Earth Minerals."
+4,27,39.0,12.0,"Basalt: Massive; fresh; hard and compact with irregular
+chips."
+5,39,47.0,8.0,"Basalt: Amygdular; fresh; hard filled with secondary
+minerals."
+6,47,60.0,13.0,"Basalt: Massive; fresh; hard and compact with irregular
+chips."
+7,60,67.0,7.0,"Basalt: Amygdular; dark, fresh, hard and partially filled with
+secondary minerals."
+8,67,87.5,20.5,Basalt: Massive; fresh; hard and compact with irregular chips.
+9,87.5,96.05,8.55,"Red bole: Red; pure, sticky mixed with friable irregular pebbles."
+10,96.05,101.7,5.65,"Basalt: Amygdular, brown, hard mixed with secondary
+minerals."
+11,101.7,104.7,3.0,"Green bole: green, sticky friable pebbles of 10-15cm, with negligible basalt chips."
+12,104.7,118.65,13.95,"Basalt: Amygdular, dark brown, hard fresh mixed/filled with"
+13,118.7,152.0,33.35,"Basalt: Massive, dark, fresh, compact medium grained with
+negligible chips."
+14,152,152.55,0.55,"Fractured Basalt: brown, medium grained mixed with friable
+chips.Q:0.8 lps"
+15,152.6,160.0,7.45,"Basalt: Massive, dark, fresh medium to fine grained"
+16,160,161.0,1.0,"Fractured Basalt: brown, medium grained mixed with friable
+chips;Q:4.30 lps"
+17,161,173.0,12.0,"Basalt: Massive, dark, fresh, compact medium grained with
+negligible chips."
+18,0,0.5,0.5,Top Soil:       Buff to Dark grey; fine silty lose soil
+19,0.5,8.65,8.15,"Basalt:         Weathered and fractured: Dark grey; irregular
+pebbles with fragile chips; Fracture:7.0-8.0 m., Q; 0.38 lps"
+20,8.65,50.85,42.2,"Massive Basalt:       Dark grey; fresh; hard angular/irregular
+chips 2-5mm mixed with medium grains."
+21,50.85,67.8,16.95,"Amygdaloidal Basalt:      Light green, moderately hard; vesicles filled with green and Quartz sec  minerals."
+22,67.8,96.05,28.25,"Massive Basalt:    Dark grey; fresh; hard; irregular and
+angular chips of 2-5 mms.  Mixed with medium grains.Fracture:79.1-  82.1 m.,Q:traces."
+23,96.05,104.7,8.65,"Amygdaloidal Basalt:      Light green and black: moderately
+hard   with quartz and green sec. minerals."
+24,104.7,127.3,22.6,"Massive Basalt:       Dark grey; fresh; hard angular chips of
+2-4 mm. mixed with medium grains."
+25,127.3,141.25,13.95,"Amygdaloidal Basalt: Light grey; moderately hard; angular chips of 2-4 mm.  with green and Quartz
+minerals.Fracture:139.0-140 m.,Q: Traces"
+26,141.25,200.0,58.75,"Massive Basalt:  Dark grey; fresh; moderately hard; very
+coarse angular chips."
+27,178.15,200.0,21.85,"Massive  Basalt:    Dark  grey;  fresh;  hard;  and  angular/irregular
+chips of 2-6mm"
+28,61,70.5,9.5,"Basalt, Black, hard compact."
+29,70.5,72.0,1.5,"Green Bole: Green, clayey, sticky, plastic"
+30,72,80.0,8.0,Vesicular filled with green earth and secondary minerals.
+31,80,85.0,5.0,"Basalt compact black mixed with sand fine to medium
+(Yellowish); Fracture:82.0 to 85m m.,Q:2.16 lps"
+32,85,101.7,16.7,"Clay, brownish black mixed with very fine sand."
+33,101.7,113.0,11.3,"Clay, brownish yellow, mixed with very fine sand."
+34,113,127.3,14.3,"Clay, brownish black mixed with very fine sand , yellow"
+35,127.3,129.95,2.65,"Sand medium grained, yellow"
+36,129.95,132.95,3.0,"Sand fine grained, yellow"
+37,132.95,135.6,2.65,"Sand medium grained, yellow"
+38,135.6,138.6,3.0,"Sand very fine, yellow"
+39,138.6,141.25,2.65,"Sand coarse  grained, yellow"
+40,141.25,152.55,11.3,"Sand medium to coarse grained, yellow"
+41,152.55,178.15,25.6,"Sand medium grained, yellow"
+42,178.15,189.45,11.3,"Sand, very fine to medium, yellow"
+43,189.45,200.0,10.55,"Sand, very fine to medium, yellowish brown"
+44,0,0.5,0.5,Top Soil: brown; sandy and silty lose material.
+45,0.5,16.95,16.45,"Amygdular Basalt: brown, highly weathered ;  vesicles filled with
+pink secondary minerals."
+46,16.95,26.0,9.05,"Massive Basalt: greyish black fresh moderately hard;
+irregular chips of 2-8 mm mixed with clay"
+47,26,29.0,3.0,"Clay: Grey sticky plastic mixed with gravelly Amygdular basaltic
+friable chips"
+48,29,44.5,15.5,"Amygdular Basalt: brown, highly weathered ; vesicles filled with
+pink secondary minerals."
+49,44.5,70.0,25.5,"Massive Basalt: Dark grey; fresh; moderately hard; gravelly 3-10
+mm slightly fractured filled with quartz minerals and clay material. Fracture at 44.8 to 50.4m Q:1.05 lps"
+50,70,76.0,6.0,"Clay: Bole Brownish red friable pieces mixed with grey irregular
+basaltic chips"
+51,76,103.0,27.0,Bole: Green to reddish green friable pieces mixed with about 10%
+52,44,45.5,1.5,"Green Bole: Green to light green sticky plastic  with friable
+pieces;"
+53,41,59.5,18.5,Basalt: Dark grey; Massive fresh; hard; chips of 2-6 mm.
+54,59.5,74.0,14.5,"Green Bole: Green to light green sticky plastic like with friable
+pieces;"
+55,74,79.1,5.1,"Vesicular Basalt: Vesicular; fresh; moderately hard; light grey;
+fragile chips of 2-6 mm with coarse grains"
+56,79.1,82.1,3.0,"Amygdular Basalt: Amygdular light grey; fresh; moderately
+hard chips; the vesicles filled with secondary minerals."
+57,82.1,90.4,8.3,Basalt: Massive; dark grey; fresh; hard; compact medium to fine grained
+58,90.4,96.05,5.65,"Clay(Bole): Reddish-brown, sticky; plastic; like ""dough"" mixed
+with brittle limestone chips of 3-5 mm"
+59,96.05,129.95,33.9,Lametas: Limestone; cherty; light brown to light grey; brittle chips of 2-6 mm
+60,129.95,132.95,3.0,Gneiss: light brown; fresh; Quartz and micaceous mixed with 20% of brittle chips of Limestone.
+61,132.95,163.85,30.9,"Gneiss: light grey; fresh; hard; thick micaceous flakes mixed
+with quartz minerals."
+62,163.85,172.5,8.65,"Gneiss: Dark grey; fresh; hard; thick micaceous flaked with
+malenocratic minerals."
+63,172.5,200.0,27.5,"Gneiss: light grey to dark grey; fresh; hard quartz and
+feldspathic coarse grains with 10% mica flakes."
+64,0,4.0,4.0,"Top  soil mixed with Basalt, weathered"
+65,4,5.2,1.2,"Basalt black, Amygdular with very small grains of secondary
+minerals, fractured"
+66,5.2,10.5,5.3,"Basalt black compact with secondary minerals minutely
+vesicular."
+67,11.5,13.0,1.5,Clay grey
+68,13,27.0,14.0,"Basalt, Amygdular black hard compact with sec. minerals."
+69,27,31.5,4.5,Basalt black hard compact.
+70,31.5,32.4,0.9,Clay grey
+71,32.4,37.0,4.6,"Amygdular vesicular basalt, black with secondary minerals."
+72,37,46.0,9.0,Basalt black hard with veins of metallic growth.
+73,46,52.0,6.0,Grey Bole.
+74,52,59.5,7.5,Basalt Vesicular filled with sparse secondary fillings.
+75,59.5,62.0,2.5,"Basalt black hard compact. with very few Vesicles filled with
+secondary fillings"
+76,62,65.0,3.0,"Basalt black hard compact. with vary few Vesicles filled with
+secondary fillings and fracture."
+77,65,73.0,8.0,Basalt black hard compact.
+78,73,81.0,8.0,Basalt vesicular black filled with secondary minerals.
+79,81,87.0,6.0,Basalt with vary few Vesicles filled with  secondary fillings
+80,87,90.4,3.4,"Basalt, very fine, black hard."
+81,90.4,93.4,3.0,Amygdular basalt black hard mixed with secondary minerals.
+82,93.4,113.0,19.6,"Basalt black hard with very coarse grains, jointed."
+83,113,117.0,4.0,Basalt Amygdular black compact.
+84,117,125.0,8.0,"Basalt, steel black, massive hard compact."
+85,125,135.6,10.6,"Sand, gritty, medium, dark brown, with medium to coarse
+grains of quartz."
+86,135.6,141.25,5.65,"Sand, gritty, medium to coarse, brown to reddish brown"
+87,141.25,144.25,3.0,"Sandstone, brown, medium to coarse, with quartz grains
+predominantly medium grained."
+88,144.25,145.0,0.75,"sand, fine to coarse, with qtz pebbles of pale brown colour."
+89,145,151.0,6.0,"sand, pale brown, fine to medium"
+90,151,160.0,9.0,"sand, very fine, light brown to yellow."
+91,160,164.0,4.0,"sand, medium, yellow"
+92,164,170.0,6.0,"sand, medium to coarse, pale yellow"
+93,170,183.0,13.0,sand fine to medium with  argillaceous material like silt or clay
+94,183,200.0,17.0,"sand, medium with clay intercalations"
+95,ww,8.0,8.0,"Top soil, mixed with clay, yellowish black"
+96,8,14.0,6.0,"Sand, light yellow, very fine,"
+97,14,20.0,6.0,"Sand, light yellow, very fine, with clay intercalations"
+98,20,62.0,42.0,"Sand dark brown, medium to coarse, with prominent quartz
+grains. with little at various depths clay intercalations"
+99,62,67.0,5.0,"Sandy clay dark brown,"
+100,67,85.0,18.0,"Sand dark brown, coarse, with prominent quartz grains. with
+little  clay intercalations"
+101,85,89.0,4.0,"Sand, medium medium to coarse, dark brown."
+102,89,94.0,5.0,clay / shale chocolate brown .
+103,94,113.0,19.0,"sand, dark brown, fine to coarse"
+104,113,115.0,2.0,clay / shale greyish brown .
+105,115,120.0,5.0,"Sandstone, light grey, fine grained, mixed with black shale
+intercalations."
+106,120,144.0,24.0,"Sandstone dark grey, mixed with black shale, with intercalated
+ferruginous sandstone."
+107,144,159.0,15.0,"Sand, light grey mixed with coarser chips of fine grained black
+shale intercalations."
+108,159,161.0,2.0,Clay black
+109,161,177.0,16.0,clay blackish with Sand light pink to grey
+110,177,180.0,3.0,"sand, light grey, fine mixed with shale"
+111,180,200.0,20.0,"sandstone, hard compact,  light pink to dark pink, fine to
+medium."
+112,0,8.0,8.0,"Top soil, mixed with clay, yellowish black"
+113,8,14.0,6.0,"Sand, light yellow, very fine,"
+114,14,20.0,6.0,"Sand, light yellow, very fine, with clay intercalations"
+115,20,62.0,42.0,"Sand dark brown, medium to coarse, with prominent quartz
+grains. with little at various depths clay intercalations"
+116,62,67.0,5.0,"Sandy clay dark brown,"
+117,67,85.0,18.0,"Sand dark brown, coarse, with prominent quartz grains .with
+little  clay intercalations"
+118,85,89.0,4.0,"Sand, medium medium to coarse, dark brown."
+119,89,94.0,5.0,clay / shale chocolate brown .
+120,94,113.0,19.0,"sand, dark brown, fine to coarse"
+121,113,115.0,2.0,clay / shale greyish brown .
+122,115,120.0,5.0,"Sandstone, light grey, fine grained, mixed with black shale
+intercalations."
+123,120,144.0,24.0,"Sandstone dark grey, mixed with black shale, with intercalated
+ferruginous sandstone."
+124,144,159.0,15.0,"Sand, light grey mixed with coarser chips of fine grained black
+shale intercalations."
+125,159,161.0,2.0,Clay black
+126,161,177.0,16.0,clay blackish with Sand light pink to grey
+127,177,180.0,3.0,"sand, light grey, fine mixed with shale"
+128,180,200.0,20.0,"sandstone, hard compact,  light pink to dark pink, fine to
+medium."
+129,0,5.65,5.65,"Top Soil:  Gritty; silty, lose material."
+130,5.65,8.65,3.0,"Vesicular Basalt, Weathered brownish black."
+131,8.65,11.3,2.65,"Basalt, Black, Jointed with chips of quartz."
+132,11.3,14.3,3.0,"Basalt, black, medium to coarse with grey bole"
+133,14.3,19.95,5.65,Basalt black hard compact
+134,19.95,22.6,2.65,Basalt black hard compact with few chips of Secondary Minerals.
+135,22.6,28.25,5.65,Basalt black hard vesicular with sparse green earth.
+136,28.25,31.25,3.0,Basalt black hard compact
+137,31.25,33.9,2.65,Basalt hard jointed with few chips of secondary minerals.
+138,33.9,45.2,11.3,Basalt black hard compact.
+139,45.2,50.85,5.65,Red bole bed mixed with vesicular basalt.
+140,50.85,53.85,3.0,Basalt black hard compact.
+141,53.85,56.5,2.65,Red bole bed mixed with vesicular basalt.
+142,56.5,59.5,3.0,Basalt black hard compact.
+143,59.5,62.15,2.65,"Basalt brownish black mixed with gritty sandstone of brownish
+red colour."
+144,62.15,65.15,3.0,gritty sandstone blackish brown hard compact.
+145,65.15,70.8,5.65,"Gritty sandstone brownish black micaceous mixed with black
+shale"
+146,70.8,76.45,5.65,Shale black mixed with sandstone blackish brown micaceous.
+147,76.45,79.1,2.65,"Shale, blackish brown mixed with greyish brown sandstone
+which is micaceous."
+148,79.1,84.75,5.65,"Shale, black mixed with dark grey sandstone compact."
+149,84.75,93.4,8.65,Shale black medium grained.
+150,93.4,96.05,2.65,Shale mixed with dark grey sandstone.
+151,96.05,99.05,3.0,"Sandstone dark grey, micaceous with few quartz chips."
+152,99.05,118.65,19.6,Sandstone grey medium grained mixed with shale dark brown.
+153,118.65,124.3,5.65,Shale brownish red mixed with gray sandstone.
+154,124.3,138.6,14.3,Sandstone dark grey medium to coarse.
+155,138.6,141.25,2.65,Sandstone dark grey gritty mixed with shale.
+156,141.25,144.25,3.0,"gritty sandstone, dark brownish grey, hard"
+157,0,2.0,2.0,Top Soil mixed with sand and clay
+158,2,4.0,2.0,"Sandstone,   medium grained, yellowish brown"
+159,4,16.0,12.0,"Sandstone, coarse grained, yellowish brown"
+160,16,25.0,9.0,"Sandstone, medium to coarse"
+161,25,28.0,3.0,"Sandstone, coarse grained, yellowish brown"
+162,28,40.5,12.5,"Sandstone, medium pale yellow"
+163,40.5,46.0,5.5,"Sandstone,   medium to course, brown."
+164,46,47.0,1.0,Clay yellowish in color
+165,47,55.0,8.0,"sandstone, fine pale yellow."
+166,55,57.0,2.0,"Sandstone, coarse grained, yellowish brown"
+167,57,59.0,2.0,sandstone with metallic outgrowth
+168,59,62.0,3.0,"sandstone, fine pale yellow."
+169,62,64.0,2.0,"Sandstone, medium, Pale yellow."
+170,64,67.0,3.0,sandstone course grained pale yellow.
+171,67,71.0,4.0,"Sandstone, fine, Pale yellow."
+172,71,78.0,7.0,"Sandstone, medium grained, Chocolate brown."
+173,78,84.0,6.0,Sandstone fine
+174,84,89.0,5.0,Sticky clay mixed with sand.
+175,89,95.0,6.0,"Sandstone, medium, pinkish grey."
+176,95,98.0,3.0,Sandstone fine to medium
+177,98,100.0,2.0,Sticky clay mixed with sand.
+178,100,104.7,4.7,"Sandstone, medium, ill sorted."
+179,104.7,105.7,1.0,clay
+180,105.7,113.0,7.3,Gritty sandstone medium grained
+181,113,114.0,1.0,clay
+182,114,122.0,8.0,Sandstone  medium to course
+183,122,128.0,6.0,Sandstone fine to medium
+184,128,150.0,22.0,sandstone medium .
+185,150,152.0,2.0,clay dark brown
+186,152,179.0,27.0,"Sandstone whitish grey, with clay intercalations"
+187,179,185.0,6.0,"sandstone  medium, grey."
+188,185,189.0,4.0,Sandstone fine .
+189,189,191.0,2.0,sandstone medium .
+190,191,192.0,1.0,"Clay, Chocolate brown."
+191,192,200.0,8.0,"sandstone  medium, grey."
+192,0,3.0,3.0,Top soil: Grey; silty; loamy; loose calcareous material (kankar)
+193,3,19.95,16.95,"Alluvium mixed with predominant argillaceous and calcareous
+material."
+194,19.95,28.25,8.3,"Alluvium with few chips of basalt, medium chips, hard compact"
+195,28.25,33.9,5.65,"Basalt , black hard compact mixed with secondary minerals,
+medium grained"
+196,33.9,62.15,28.25,"Clay, red, fine"
+197,62.15,65.15,3.0,"Sand, light brown medium to coarse grained"
+198,65.15,67.8,2.65,Sandstone mixed with shale blakish brown
+199,67.8,70.8,3.0,"Sandstone  blakish brown, medium grained"
+200,70.8,76.45,5.65,"Sand fine to medium, blakish brown"
+201,76.45,79.1,2.65,"Sandstone with shale, yellow"
+202,79.1,84.75,5.65,"sand, fine to medium grained"
+203,84.75,93.4,8.65,"Sand, light brown, medium mixed with shale yellow"
+204,93.4,99.05,5.65,"Sandstone medium grained mixed with shale, brownish red."
+205,99.05,101.7,2.65,"Shale, brownish red"
+206,101.7,110.35,8.65,Sandstone whitish brownish medium grained
+207,110.35,144.25,33.9,"Sandstone light yellow, medium grained"
+208,144.25,155.55,11.3,Sandstone medium grained mixed carbonaceous shale
+209,155.55,158.2,2.65,"Sandstone, light yellow, fine grained"
+210,158.2,161.2,3.0,Sandstone medium to coarse grained mixed with carbonaceous shale
+211,161.2,166.85,5.65,"Sandstone fine to medium mixed with shale, yellow"
+212,166.85,169.5,2.65,"Sand, light yellow very fine"
+213,169.5,172.5,3.0,Shale mixed with sand fine to medium
+214,172.5,180.8,8.3,"Sandstone light yellow, medium grained  mixed with shale"
+215,180.8,183.8,3.0,Shale very fine yellow
+216,183.8,186.45,2.65,"Sandstone, fine to medium grained mixed with shale."
+217,186.45,189.45,3.0,"Sandstone, fine to medium grained mixed with shale argillaceous"
+218,189.45,192.0,2.55,Shale argillaceous yellow
+219,192,197.1,5.1,Sandstone medium mixed with shale

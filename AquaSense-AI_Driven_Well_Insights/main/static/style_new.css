@@ -1,0 +1,402 @@
+/* Reset Styles */
+body, h1, h2, p, ul, li, a, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #c5c5ff; /* Set a light background color */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    color: white;
+    background-color: black; /* Dark background color for the sidebar */
+    width: 250px;
+    height: 100vh;
+    padding: 10px;
+    top: 0;
+    left: -250px; /* Start the sidebar off the screen */
+    position: fixed;
+    transition: left 0.3s; /* Add a transition for smooth sliding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    /* Hide the logo by default
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s; */
+}
+
+/* Sidebar Opening Button Styles */
+.sidebar-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Close Button Styles */
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: -40px; /* Adjust the right value to hide the button */
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: grey;
+    opacity: 0; /* Initially set the opacity to 0 to make it invisible */
+    transition: opacity 0.3s, right 0.3s, transform 0.3s; /* Add transitions for opacity, right position, and rotation */
+    transform-origin: center center; /* Set the transform origin to the center */
+}
+
+/* Rotate the close button on hover */
+.close-btn:hover {
+    transform: translateY(-2px) rotate(180deg); /* Rotate by 180 degrees on hover and adjust position */
+}
+
+/* Sidebar Logo Styles */
+.logo {
+    width: 217.5px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 12px 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the logo */
+.logo:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sidebar Menu Styles */
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 15px;
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li i {
+    margin-right: 10px;
+}
+
+.menu ul li a i {
+    margin-right: 10px;
+}
+
+.menu-content {
+    padding: 4px 8px;
+}
+
+.menu-content:hover {
+    background-color: #262626;
+    border-radius: 8px;
+}
+
+/* Social Media Styles */
+.social-media {
+    position: relative;
+    top: 430px;
+    left: 45px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display list items in a row */
+}
+
+.social-media ul li {
+    margin-right: 10px; /* Add some spacing between the icons */
+    font-size: 25px;
+}
+
+.icon:hover {
+    font-size: larger;
+}
+
+#facebook:hover {
+    color: #0c88ef;
+}
+
+#twitter:hover {
+    color: #1da1f2;
+}
+
+#instagram:hover {
+    color: #f600c5;
+}
+
+#youtube:hover {
+    color: #ff0000;
+}
+
+/* Content Styles */
+.content {
+    margin-left: 0; /* Ensure content starts to the right of the sidebar */
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header label {
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+#open-sidebar {
+    position: relative;
+    left: 10px;
+    bottom: 425px;
+}
+
+/* Feedback Button Styles */
+.feedback-button {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+}
+
+/* Feedback Button Styles */
+#open-feedback {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Feedback Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Feedback Textarea Styles */
+#feedback-text {
+    width: calc(100% - 25px); /* Calculate the width minus the margins */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    max-width: 100%; /* Ensure it doesn't exceed screen width */
+}
+
+/* Submit Button Styles */
+#submit-feedback {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Form Container Styles */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    padding-bottom: 20px; /* Add some space at the bottom */
+}
+
+/* Input Group Styles */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input Box Styles */
+.search {
+    position: relative;
+    bottom: 830px;
+    font-size: 16px;
+}
+
+.search-text {
+    width: 80%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Submit Button Styles */
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px; /* Add margin to separate from the input box */
+}
+
+/* Main Box Styles */
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('static/  logo-asadwi.png');
+    background-size: contain; /* Adjust to your preference */
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the background image both horizontally and vertically */
+    width: 100%;
+    height: 100vh;
+}
+
+.bgImg {
+    position: relative;
+    bottom: 950px;
+}
+
+/* Output Container Styles */
+.output-container {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Initially hide it to the right */
+    width: 400px; /* Adjust the width as needed */
+    height: 100%;
+    background-color: #fff; /* Background color for the output area */
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2); /* Add shadow to the left side */
+    overflow-y: auto; /* Add scroll if needed */
+    transition: right 0.3s; /* Add transition for smooth sliding */
+    z-index: 1;
+}
+
+/* Output Content Styles */
+.output-content {
+    padding: 20px;
+    /* Add your desired styles for the output content here */
+}
+
+/* Close Output Button Styles */
+.close-output-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px; /* Set font size to 16px */
+    display: block; /* Ensure the button is a block-level element */
+    margin: 0 auto; /* Center horizontally */
+    position: absolute; /* Position absolutely within the container */
+    bottom: 10px; /* Place the button at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center horizontally */
+}
+
+/* Hiding The Check Button */
+#check {
+    display: none;
+}
+
+/* Sidebar Show/Hide Animation */
+#check:checked + .sidebar {
+    left: 0; /* Move the sidebar in when the checkbox is checked */
+    /* opacity: 1; Display the logo
+    pointer-events: auto; */
+}
+
+/* Show Close Button When Sidebar Opens */
+#check:checked + .sidebar .close-btn {
+    opacity: 1; /* Make the close button visible when the sidebar opens */
+    right: 10px; /* Adjust the right value to show the button */
+}
+
+/* Hide the "fa-bars" icon when the checkbox is checked */
+#check:checked + .sidebar + .content .header label .fa-bars {
+    opacity: 0; /* Hide the icon by reducing opacity */
+    pointer-events: none; /* Disable pointer events to make it unclickable */
+}
+
+/* Show the "fa-bars" icon when the checkbox is not checked */
+#check:not(:checked) + .sidebar + .content .header label .fa-bars {
+    opacity: 1; /* Show the icon by restoring opacity */
+    pointer-events: auto; /* Enable pointer events */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add smooth transitions for opacity and transform */
+    transform: translateX(-20px); /* Start icon off-screen */
+}
+
+/* Move the "fa-bars" icon smoothly into position */
+#check:not(:checked) + .sidebar + .content .header label .fa-bars {
+    transform: translateX(0); /* Move the icon to its original position */
+}
+
+/* Hover effect for the logo
+#check:checked + .sidebar .logo:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+} */
