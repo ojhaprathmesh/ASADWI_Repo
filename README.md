@@ -5,6 +5,7 @@ Project Name Origin:
     Orignal Name : AquaSense - AI Driven Well Insights
 
 Project Structure:
+
     Main Directory:
         ai_models:
             Three Python Scripts: Train and store machine learning models for water quality, geology, and lithology.
