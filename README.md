@@ -19,7 +19,6 @@ ___Orignal Name : AquaSense - AI Driven Well Insights___
     * style_new.css: CSS styling for the web application.
     * templates:
         * main_new.html: HTML template for the Flask web application.
-
 #### Files(in Main Directory): ####
 * Flask App.py: Main Flask application.
 * Interface.py: Python scripts for machine learning model interface.
