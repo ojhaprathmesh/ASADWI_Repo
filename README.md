@@ -4,7 +4,7 @@
 _**ASADWI**_ is derived from the Hindi word "आसाढ़," representing a rain-dominant month. This project, ASADWI (AI-based Spatial Analysis for Drinking Water Information), is developed for the Smart India Hackathon 2023. The application focuses on providing spatial analyses related to water quality, geology, and lithology based on user-provided location information.
     Orignal Name : AquaSense - AI Driven Well Insights
 
-**Project Structure:**
+## **Project Structure:** ##
 
     Main Directory:
         ai_models:
@@ -24,10 +24,10 @@ _**ASADWI**_ is derived from the Hindi word "आसाढ़," representing a ra
             Flask App.py: Main Flask application.
             Interface.py: Python scripts for machine learning model interface.
         
-**Machine Learning Models:**
+## **Machine Learning Models:** ##
     Three machine learning models predict water quality, geology information, and lithology based on user-provided location data. While these models are functional, they are acknowledged as inefficient due to limited datasets, resulting in suboptimal time complexity.
 
-**Call for Contributions:**
+## **Call for Contributions:** ##
 1. Improved Machine Learning Models:
     Contributors are invited to enhance the existing models through:
    
@@ -39,5 +39,5 @@ _**ASADWI**_ is derived from the Hindi word "आसाढ़," representing a ra
 2. UI/UX Enhancements:
     Contributions towards improving the user interface and experience are highly appreciated. This includes design enhancements, usability improvements, and creative additions.
 
-**Note to Contributors:**
+## **Note to Contributors:** ##
     This project welcomes contributions to address model inefficiencies and improve user experience. Please feel free to fork the repository, make pull requests, and collaborate to make ASADWI a more robust and user-friendly platform. We appreciate efforts towards refining machine learning models, leveraging extensive datasets, and enhancing UI/UX for impactful spatial analysis. Let's create something valuable together!
