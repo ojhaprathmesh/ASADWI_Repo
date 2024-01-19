@@ -6,23 +6,23 @@ _**ASADWI**_ is derived from the Hindi word "आसाढ़," representing a ra
 
 ## **Project Structure:** ##
 ### Main Directory: ###
-*ai_models:
-    *Three Python Scripts: Train and store machine learning models for water quality, geology, and lithology.
-    *Three Pickle Files: Storage for the trained ML models.
-*data:
-    *CSV and XLSX Files: Datasets for training machine learning models.      
-*raw_data:
-    *PDF Files: Original data extracted from PDFs.
-*static:
-    *logo-asadwi.png: Project logo.
-    *script_new.js: JavaScript for web interactions.
-    *style_new.css: CSS styling for the web application.
-    *templates:
-        *main_new.html: HTML template for the Flask web application.
+* ai_models:
+    * Three Python Scripts: Train and store machine learning models for water quality, geology, and lithology.
+    * Three Pickle Files: Storage for the trained ML models.
+* data:
+    * CSV and XLSX Files: Datasets for training machine learning models.      
+* raw_data:
+    * PDF Files: Original data extracted from PDFs.
+* tatic:
+    * logo-asadwi.png: Project logo.
+    * script_new.js: JavaScript for web interactions.
+    * style_new.css: CSS styling for the web application.
+    * templates:
+        * main_new.html: HTML template for the Flask web application.
 
 #### Files(in Main Directory): ####
-*Flask App.py: Main Flask application.
-*Interface.py: Python scripts for machine learning model interface.
+* Flask App.py: Main Flask application.
+* Interface.py: Python scripts for machine learning model interface.
         
 ## **Machine Learning Models:** ##
     Three machine learning models predict water quality, geology information, and lithology based on user-provided location data. While these models are functional, they are acknowledged as inefficient due to limited datasets, resulting in suboptimal time complexity.
