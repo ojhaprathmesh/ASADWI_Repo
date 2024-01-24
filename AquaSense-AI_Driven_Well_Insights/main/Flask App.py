@@ -23,7 +23,7 @@ def process_input():
     result_dict = {
         "water_quality_result": a,
         "geology_result": b,
-        "lithology_result": c
+        "lithology_result": c[0] + ', ' + c[1]
     }
 
     # Return the results as JSON

@@ -3,24 +3,24 @@ import numpy as np
 import pandas as pd
 import pickle
 
-dataset = pd.read_csv("raw_data\\water_quality_data_processed.csv")
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error, r2_score
+
+import matplotlib.pyplot as plt
+
+dataset = pd.read_csv("../data/water_quality_data_processed.csv")
 
 y = dataset['TDS']
 x = dataset.drop(['TDS', 'X'], axis=1)
 
-x.to_excel("Excel.xlsx")
-
-from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.4, random_state=1000)
 
-from sklearn.ensemble import RandomForestRegressor
 rf_model = RandomForestRegressor(max_depth=100, random_state=1000)
 rf_model.fit(x_train, y_train)
 
 y_rf_train_pred = rf_model.predict(x_train)
 y_rf_test_pred = rf_model.predict(x_test)
-
-from sklearn.metrics import mean_squared_error, r2_score
 
 rf_train_mse = mean_squared_error(y_train, y_rf_train_pred)
 rf_train_r2 = r2_score(y_train, y_rf_train_pred)
@@ -39,11 +39,10 @@ print("Random Forest Training R2 Score:", rf_train_r2)
 print("Random Forest Test MSE:", rf_test_mse)
 print("Random Forest Test R2 Score:", rf_test_r2)
 
-import matplotlib.pyplot as plt
-plt.figure(figsize=(8,8))
+plt.figure(figsize=(8, 8))
 plt.scatter(x=y_train, y=y_rf_train_pred, alpha=0.2)
 
-z = np.polyfit(y_train,y_rf_train_pred, 1)
+z = np.polyfit(y_train, y_rf_train_pred, 1)
 p = np.poly1d(z)
 
 plt.plot(y_train, p(y_train), '#FFBB99')

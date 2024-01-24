@@ -26,7 +26,7 @@ def water_quality_check(model_file_path, csv_file_path, place=inp_place):
             return "Safe Water"
 
     else:
-        return "No raw_data found for the specified place!"
+        return "No data found for the specified place!"
 
 
 def geology_check(model_file_path, excel_file_path, place=inp_place):
@@ -40,16 +40,17 @@ def geology_check(model_file_path, excel_file_path, place=inp_place):
     # Check if result_df is empty
     if not result_df.empty:
         # Extract relevant raw_data from the result DataFrame
-        input_data = result_df[['LaDeg', 'LaMin', 'LaSec', 'LoDeg', 'LoMin', 'LoSec', 'Elevation', 'Lining', 'MP', 'Dia']]
+        input_data = result_df[
+            ['LaDeg', 'LaMin', 'LaSec', 'LoDeg', 'LoMin', 'LoSec', 'Elevation', 'Lining', 'MP', 'Dia']]
 
         # Make predictions using the loaded model
         predictions = geo_model.predict(input_data)
 
         # Display predictions
-        return f"{round(predictions[-1],4)} meters"
+        return f"{round(predictions[-1], 4)} meters"
 
     else:
-        return "No raw_data found for the specified place!"
+        return "No data found for the specified place!"
 
 
 def lithology(model_file_path, excel_file_path, place=inp_place):
@@ -65,29 +66,31 @@ def lithology(model_file_path, excel_file_path, place=inp_place):
 
     value = predictions[-1]
     if value <= 1:
-        return "Clay And Kankar"
+        soil = "Clay And Kankar"
     elif value <= 2:
-        return "Fine Sand With Clay"
+        soil = "Fine Sand With Clay"
     elif value <= 3:
-        return "Fine Sand"
+        soil = "Fine Sand"
     elif value <= 4:
-        return "Fine To Medium Sand"
+        soil = "Fine To Medium Sand"
     elif value <= 5:
-        return "Coarse To Very Coarse Sand"
+        soil = "Coarse To Very Coarse Sand"
     elif value <= 6:
-        return "Coarse Sand"
+        soil = "Coarse Sand"
     elif value <= 7:
-        return "Sandy Clay"
+        soil = "Sandy Clay"
     elif value <= 8:
-        return "Clay"
+        soil = "Clay"
     elif value <= 9:
-        return "Medium Sand"
-    elif value <= 10:
-        return "Gravel"
+        soil = "Medium Sand"
+    else:
+        soil = "Gravel"
 
     if value <= 3.5:
-        return "Digging Manually Possible"
+        method = "Digging Manually Possible"
     elif value <= 7:
-        return "Digging With JCB"
-    elif value <= 10:
-        return "Digging With Drill"
+        method = "Digging With JCB"
+    else:
+        method = "Digging With Drill"
+
+    return soil, method

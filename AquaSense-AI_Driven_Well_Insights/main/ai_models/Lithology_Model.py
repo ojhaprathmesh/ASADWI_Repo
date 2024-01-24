@@ -3,14 +3,12 @@ import numpy as np
 import pandas as pd
 import pickle
 
-dataset = pd.read_excel("raw_data\\Lithology Bihar.xlsx")
+dataset = pd.read_excel("../data/Lithology Bihar.xlsx")
 
 print(dataset)
 
 y = dataset['Lithology']
 x = dataset.drop(['Lithology'], axis=1)
-
-dataset.to_csv("Excel.csv")
 
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.4, random_state=1000)

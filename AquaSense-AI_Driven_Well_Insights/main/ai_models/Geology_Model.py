@@ -16,8 +16,6 @@ dataset.drop(
     ['Total Depth', 'Village', 'Taluka', 'District', 'Basin', 'Sub-basin', 'Minor basin', 'Geology', 'Aquifer'], axis=1,
     inplace=True)
 x = dataset
-print(dataset)
-dataset.to_csv("Excel.csv")
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.4, random_state=1000)
 
