@@ -1,7 +1,7 @@
-# **_ASADWI: AI-based Spatial Analysis for Drinking Water Information_**
+# _ASADWI: AI-based Spatial Analysis for Drinking Water Information_
 
 ## Project Name Origin:
-**ASADWI** is derived from the Hindi word "आसाढ़," representing a rain-dominant month. This project, ASADWI (AI-based Spatial Analysis for Drinking Water Information), is developed for the Smart India Hackathon 2023. The application focuses on providing spatial analyses related to water quality, geology, and lithology based on user-provided location information.
+**_ASADWI_** is derived from the Hindi word "आसाढ़", representing a rain-dominant month. This project, ASADWI (AI-based Spatial Analysis for Drinking Water Information), is developed for the Smart India Hackathon 2023. The application focuses on providing spatial analyses related to water quality, geology, and lithology based on user-provided location information.
 ___Original Name: AquaSense - AI Driven Well Insights___
 
 ## Project Structure:
