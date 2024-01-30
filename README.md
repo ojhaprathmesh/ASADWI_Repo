@@ -37,7 +37,7 @@ Three machine learning models predict water quality, geology information, and li
    pip install -r requirements.txt
    ```
    
-3. **Run the Application:**
+3. **Run the Application (Make sure you are in main directory):**
    ```
    python Flask_App.py
    ```
