@@ -29,7 +29,7 @@ Three machine learning models predict water quality, geology information, and li
 ## How to Use
 1. **Clone the Repository:**
    ```
-   git clone <repository_url>
+   git clone https://github.com/ojhaprathmesh/AI-based_Spatial_Analysis_for_Drinking_Water_Information.git
    ```
    
 2. **Install Dependencies:**
