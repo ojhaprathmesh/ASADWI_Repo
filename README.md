@@ -26,6 +26,37 @@ ___Original Name: AquaSense - AI Driven Well Insights___
 ## Machine Learning Models:
 Three machine learning models predict water quality, geology information, and lithology based on user-provided location data. While these models are functional, they are acknowledged as inefficient due to limited datasets, resulting in suboptimal time complexity.
 
+## How to Use
+1. **Clone the Repository:**
+   ```
+   git clone <repository_url>
+   ```
+   
+2. **Install Dependencies:**
+   ```
+   pip install -r requirements.txt
+   ```
+   
+3. **Run the Application:**
+   ```
+   python Flask_App.py
+   ```
+
+4. **Access the Web Application:**
+   Open a web browser and navigate to `http://localhost:5000` to access the ASADWI web interface.
+
+5. **Input Location Data:**
+   Enter the required location details in the provided input field.
+
+6. **View Analysis Results:**
+   Upon submission, the application will display spatial analysis results for water quality, geology, and lithology based on the provided location data.
+
+7. **Contribute:**
+   Fork the repository, make desired improvements or modifications, and submit a pull request. Contributions towards improving machine learning models, enhancing UI/UX, and optimizing algorithms are highly appreciated.
+
+8. **Feedback:**
+   We welcome feedback and suggestions for further enhancements. Feel free to reach out with any ideas or contributions to make ASADWI more efficient and user-friendly.
+
 ## Call for Contributions:
 - **Improved Machine Learning Models:**
   - Contributors are invited to enhance the existing models through:
