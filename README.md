@@ -9,16 +9,20 @@ ___Original Name: AquaSense - AI Driven Well Insights___
 - **ai_models:**
   - Three Python Scripts: Train and store machine learning models for water quality, geology, and lithology.
   - Three Pickle Files: Storage for the trained ML models.
+
 - **data:**
   - CSV and XLSX Files: Datasets for training machine learning models.
+
 - **raw_data:**
   - PDF Files: Original data extracted from PDFs.
+
 - **static:**
   - logo-asadwi.png: Project logo.
   - script_new.js: JavaScript for web interactions.
   - style_new.css: CSS styling for the web application.
   - **templates:**
     - main_new.html: HTML template for the Flask web application.
+
 #### Files (in Main Directory):
 - Flask App.py: Main Flask application.
 - Interface.py: Python scripts for machine learning model interface.
