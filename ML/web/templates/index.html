@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaSense - Water Quality Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <meta name="description"
+        content="AquaSense - Advanced water quality prediction using machine learning for potability analysis, geological assessments, and lithology predictions.">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="/" class="logo">AquaSense</a>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#predict" class="nav-link">Make Prediction</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Water Quality Prediction <span>with Machine Learning</span></h1>
+                <p>AquaSense leverages advanced machine learning algorithms to predict water quality and analyze
+                    geological formations for better groundwater management.</p>
+                <div class="hero-buttons">
+                    <a href="#predict" class="btn btn-primary">Make Prediction</a>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='images/hero-image.png') }}"
+                    alt="Water Quality Analysis Visualization">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>About AquaSense</h2>
+                <p>Our mission is to make water quality assessment accessible and accurate for everyone</p>
+            </div>
+            <div class="content-grid cols-2">
+                <div class="content-item">
+                    <h3>The Problem</h3>
+                    <p>Access to clean water is a fundamental human right, yet billions of people worldwide still lack
+                        this essential resource. Traditional water testing methods are often expensive, time-consuming,
+                        and not readily available in many regions.</p>
+                </div>
+                <div class="content-item">
+                    <h3>Our Solution</h3>
+                    <p>AquaSense combines machine learning with water science to provide instant predictions about water
+                        quality, geological formations, and lithology analysis - helping communities, researchers, and
+                        organizations make informed decisions about water sources.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Features</h2>
+                <p>Comprehensive water analysis powered by advanced algorithms</p>
+            </div>
+            <div class="content-grid cols-3">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="{{ url_for('static', filename='images/water-icon.png') }}" alt="Water Quality Icon">
+                    </div>
+                    <div class="card-body">
+                        <h3>Water Quality Prediction</h3>
+                        <p>Predict water potability based on various parameters such as pH, hardness, solids,
+                            chloramines, and more with high accuracy.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="{{ url_for('static', filename='images/geology-icon.png') }}"
+                            alt="Geology Analysis Icon">
+                    </div>
+                    <div class="card-body">
+                        <h3>Geological Analysis</h3>
+                        <p>Identify geological formations and their potential impact on groundwater quality and
+                            availability in different regions.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="{{ url_for('static', filename='images/lithology-icon.png') }}"
+                            alt="Lithology Prediction Icon">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lithology Prediction</h3>
+                        <p>Analyze soil layers and compositions to determine aquifer characteristics and water-bearing
+                            potential of different formations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="predict" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Make a Prediction</h2>
+                <p>Select the type of analysis you need and enter the required parameters</p>
+            </div>
+
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="prediction-type">Prediction Type:</label>
+                    <select id="prediction-type" name="prediction_type" required>
+                        <option value="">Select type of prediction</option>
+                        <option value="water-quality">Water Quality Analysis</option>
+                        <option value="geological">Geological Formation Analysis</option>
+                        <option value="lithology">Lithology Analysis</option>
+                    </select>
+                </div>
+
+                <!-- Water Quality Parameters -->
+                <form id="water-quality-form" class="hidden">
+                    <h3>Water Quality Parameters</h3>
+
+                    <div class="content-grid cols-2">
+                        <div class="form-group">
+                            <label for="ph">pH Value:</label>
+                            <input type="number" id="ph" name="ph" step="0.01" min="0" max="14">
+                            <small class="form-text">The pH of water (0-14)</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hardness">Hardness:</label>
+                            <input type="number" id="hardness" name="hardness" step="0.01" min="0">
+                            <small class="form-text">Water hardness in mg/L</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="solids">Total Dissolved Solids:</label>
+                            <input type="number" id="solids" name="solids" step="0.01" min="0">
+                            <small class="form-text">TDS in ppm</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="chloramines">Chloramines:</label>
+                            <input type="number" id="chloramines" name="chloramines" step="0.01" min="0">
+                            <small class="form-text">Chloramines level in ppm</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sulfate">Sulfate:</label>
+                            <input type="number" id="sulfate" name="sulfate" step="0.01" min="0">
+                            <small class="form-text">Sulfate concentration in mg/L</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="conductivity">Conductivity:</label>
+                            <input type="number" id="conductivity" name="conductivity" step="0.01" min="0">
+                            <small class="form-text">Electrical conductivity in μS/cm</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="organic_carbon">Organic Carbon:</label>
+                            <input type="number" id="organic_carbon" name="organic_carbon" step="0.01" min="0">
+                            <small class="form-text">Total organic carbon in ppm</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="trihalomethanes">Trihalomethanes:</label>
+                            <input type="number" id="trihalomethanes" name="trihalomethanes" step="0.01" min="0">
+                            <small class="form-text">Trihalomethanes concentration in μg/L</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="turbidity">Turbidity:</label>
+                            <input type="number" id="turbidity" name="turbidity" step="0.01" min="0">
+                            <small class="form-text">Turbidity in NTU</small>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Generate Prediction</button>
+                        <button type="button" class="btn btn-secondary reset-form">Reset Form</button>
+                    </div>
+                </form>
+
+                <!-- Geology Parameters -->
+                <form id="geological-form" class="hidden">
+                    <h3>Geological Parameters</h3>
+
+                    <div class="content-grid cols-2">
+                        <div class="form-group">
+                            <label for="location">Location:</label>
+                            <select id="location" name="location">
+                                <option value="">Select location</option>
+                                <option value="urban">Urban Area</option>
+                                <option value="rural">Rural Area</option>
+                                <option value="coastal">Coastal Region</option>
+                                <option value="mountainous">Mountainous Region</option>
+                                <option value="desert">Desert</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="depth">Depth (meters):</label>
+                            <input type="number" id="depth" name="depth" min="0" step="0.1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="elevation">Elevation (meters):</label>
+                            <input type="number" id="elevation" name="elevation" step="0.1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="distance_to_water">Distance to Water Body (km):</label>
+                            <input type="number" id="distance_to_water" name="distance_to_water" min="0" step="0.1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="annual_rainfall">Annual Rainfall (mm):</label>
+                            <input type="number" id="annual_rainfall" name="annual_rainfall" min="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="geological_image">Upload Geological Image (optional):</label>
+                            <input type="file" id="geological_image" name="geological_image" accept="image/*">
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Generate Prediction</button>
+                        <button type="button" class="btn btn-secondary reset-form">Reset Form</button>
+                    </div>
+                </form>
+
+                <!-- Lithology Parameters -->
+                <form id="lithology-form" class="hidden">
+                    <h3>Lithology Parameters</h3>
+
+                    <div class="content-grid cols-2">
+                        <div class="form-group">
+                            <label for="region_type">Region Type:</label>
+                            <select id="region_type" name="region_type">
+                                <option value="">Select region type</option>
+                                <option value="alluvial">Alluvial Plain</option>
+                                <option value="basaltic">Basaltic Terrain</option>
+                                <option value="coastal">Coastal Region</option>
+                                <option value="granite">Granitic Region</option>
+                                <option value="karst">Karst Terrain</option>
+                                <option value="sedimentary">Sedimentary Basin</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sample_depth">Sample Depth (meters):</label>
+                            <input type="number" id="sample_depth" name="sample_depth" min="0" step="0.1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="groundwater_level">Groundwater Level (meters):</label>
+                            <input type="number" id="groundwater_level" name="groundwater_level" step="0.1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clay_content">Clay Content (%):</label>
+                            <input type="number" id="clay_content" name="clay_content" min="0" max="100">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sand_content">Sand Content (%):</label>
+                            <input type="number" id="sand_content" name="sand_content" min="0" max="100">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gravel_content">Gravel Content (%):</label>
+                            <input type="number" id="gravel_content" name="gravel_content" min="0" max="100">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="organic_matter">Organic Matter (%):</label>
+                            <input type="number" id="organic_matter" name="organic_matter" min="0" max="100" step="0.1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="soil_sample_image">Upload Soil Sample Image (optional):</label>
+                            <input type="file" id="soil_sample_image" name="soil_sample_image" accept="image/*">
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Generate Prediction</button>
+                        <button type="button" class="btn btn-secondary reset-form">Reset Form</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Results Container -->
+            <div id="results-container" class="results-container">
+                <div class="placeholder-content">
+                    <div class="icon-large">🔍</div>
+                    <p>Select prediction type and fill out the form to get results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Have questions or need assistance? Reach out to our team</p>
+            </div>
+            <div class="content-grid cols-2">
+                <div class="content-item">
+                    <h3>Get in Touch</h3>
+                    <p>Our team of experts is ready to answer your questions and provide support for your water analysis
+                        needs.</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> info@aquasense.ai</p>
+                        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                        <p><strong>Address:</strong> 123 Water Street, Hydropolis, WA 98765</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>AquaSense</h3>
+                    <p>Advanced Water Analysis with Machine Learning</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#predict">Predict</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Research Papers</a></li>
+                            <li><a href="#">Data Sources</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Data Policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AquaSense. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><svg class="icon">
+                            <use xlink:href="#facebook-icon"></use>
+                        </svg></a>
+                    <a href="#" aria-label="Twitter"><svg class="icon">
+                            <use xlink:href="#twitter-icon"></use>
+                        </svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg class="icon">
+                            <use xlink:href="#linkedin-icon"></use>
+                        </svg></a>
+                    <a href="#" aria-label="GitHub"><svg class="icon">
+                            <use xlink:href="#github-icon"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SVG Icons -->
+    <svg style="display: none;">
+        <symbol id="facebook-icon" viewBox="0 0 24 24">
+            <path d="M18,2h-3C10.7,2,9,3.7,9,8v3H6v4h3v7h4v-7h3l1-4h-4V8c0-1.1,0.9-2,2-2h2V2z" />
+        </symbol>
+        <symbol id="twitter-icon" viewBox="0 0 24 24">
+            <path
+                d="M22,5.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C8.2,8.5,5.5,6.9,3.5,4.4C3.2,5,3,5.7,3,6.4c0,1.4,0.7,2.7,1.8,3.4C4.2,9.8,3.6,9.6,3,9.3v0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1C4.5,19,6.7,19.8,9,19.8c7.2,0,11.2-6,11.2-11.2c0-0.2,0-0.3,0-0.5C21,7.3,21.6,6.6,22,5.8z" />
+        </symbol>
+        <symbol id="linkedin-icon" viewBox="0 0 24 24">
+            <path
+                d="M19,3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.1,3,19,3z M9,17H6.5v-7H9V17z M7.7,8.7c-0.8,0-1.4-0.7-1.4-1.4c0-0.8,0.6-1.4,1.4-1.4c0.8,0,1.4,0.6,1.4,1.4C9.1,8.1,8.5,8.7,7.7,8.7z M18,17h-2.5v-3.9c0-1.2-0.4-2-1.5-2c-0.8,0-1.3,0.5-1.5,1c-0.1,0.2-0.1,0.5-0.1,0.8V17h-2.5V9.9H12V11c0.5-0.8,1.3-1.3,2.3-1.3c1.7,0,2.9,1.1,2.9,3.4V17z" />
+        </symbol>
+        <symbol id="github-icon" viewBox="0 0 24 24">
+            <path
+                d="M12,2C6.5,2,2,6.5,2,12c0,4.4,2.9,8.2,6.8,9.5c0.5,0.1,0.7-0.2,0.7-0.5c0-0.2,0-0.9,0-1.7c-2.8,0.6-3.4-1.2-3.4-1.2c-0.5-1.1-1.1-1.4-1.1-1.4c-0.9-0.6,0.1-0.6,0.1-0.6c1,0.1,1.5,1,1.5,1c0.9,1.5,2.3,1.1,2.9,0.8c0.1-0.6,0.4-1.1,0.6-1.3c-2.2-0.3-4.6-1.1-4.6-5c0-1.1,0.4-2,1-2.7c-0.1-0.3-0.4-1.3,0.1-2.7c0,0,0.8-0.3,2.7,1c0.8-0.2,1.7-0.3,2.5-0.3c0.8,0,1.7,0.1,2.5,0.3c1.9-1.3,2.7-1,2.7-1c0.5,1.4,0.2,2.4,0.1,2.7c0.6,0.7,1,1.6,1,2.7c0,3.9-2.4,4.7-4.6,5c0.4,0.3,0.7,0.9,0.7,1.9c0,1.3,0,2.4,0,2.7c0,0.3,0.2,0.6,0.7,0.5C19.1,20.2,22,16.4,22,12C22,6.5,17.5,2,12,2z" />
+        </symbol>
+    </svg>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+
+</html>
